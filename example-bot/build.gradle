@@ -1,0 +1,39 @@
+plugins {
+    id("com.github.johnrengelman.shadow")
+    id("io.micronaut.application")
+}
+
+version = "0.1"
+group = "com.juanmuscaria"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("io.micronaut:micronaut-jackson-databind")
+    runtimeOnly("ch.qos.logback:logback-classic")
+    compileOnly("org.graalvm.nativeimage:svm")
+
+    implementation("io.micronaut:micronaut-validation")
+
+    implementation project(":")
+}
+
+application {
+    mainClass.set("com.juanmuscaria.microcord.example.ExampleBot")
+    applicationDefaultJvmArgs = ["-agentlib:native-image-agent=config-merge-dir=src/main/resources/META-INF/native-image"]
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
+}
+
+graalvmNative.toolchainDetection = false
+micronaut {
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.juanmuscaria.*")
+    }
+}

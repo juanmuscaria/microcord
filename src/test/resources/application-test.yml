@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: microcord
+discord:
+  token: "${DISCORD_TOKEN}"
+  shards_total: 1

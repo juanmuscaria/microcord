@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: 'Example Bot'
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: 'update'
+datasources:
+  default:
+    url: '${JDBC_URL:`jdbc:h2:file:./data/BOT-DB`}'
+    driver-class-name: '${JDBC_DRIVER:org.h2.Driver}'
+    username: '${JDBC_USER:root}'
+    password: '${JDBC_PASSWORD:}'
+discord:
+  token: '${DISCORD_TOKEN}'
+  # Default JDA cache flags list, uncomment to customize
+  # cache-flags: [ACTIVITY, VOICE_STATE, EMOJI, STICKER, CLIENT_STATUS, MEMBER_OVERRIDES, ROLE_TAGS, FORUM_TAGS, ONLINE_STATUS, SCHEDULED_EVENTS]
+
+  # Default JDA intents list, uncomment to customize, cache intents are implicitly added.
+  # intents: [GUILD_BANS, GUILD_MODERATION, GUILD_EMOJIS_AND_STICKERS, GUILD_INVITES, GUILD_VOICE_STATES, GUILD_MESSAGES, GUILD_MESSAGE_REACTIONS, DIRECT_MESSAGES, DIRECT_MESSAGE_REACTIONS, SCHEDULED_EVENTS]
+
+  # Default JDA shard total, -1 for Discord recommended shard total,
+  # shards-total: -1
+
+  # Default JDA shards list, uncomment for manual configuration of shards. Can be used for external management of bot instances and clusters.
+  # shards: []

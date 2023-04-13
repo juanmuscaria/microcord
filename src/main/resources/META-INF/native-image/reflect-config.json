@@ -1,0 +1,53 @@
+[
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.Guild;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.Member;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.Role;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.ScheduledEvent;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.User;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.Category;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.ForumChannel;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.NewsChannel;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.PrivateChannel;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.StageChannel;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.TextChannel;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.ThreadChannel;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.emoji.RichCustomEmoji;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.entities.sticker.GuildSticker;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.api.managers.AudioManager;"
+},
+{
+  "name":"[Lnet.dv8tion.jda.internal.entities.MemberPresenceImpl;"
+}
+]
