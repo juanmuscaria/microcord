@@ -109,8 +109,10 @@ nexusPublishing {
     }
 }
 
-signing {
-    useGpgCmd()
-    sign(publishing.publications.named("mavenJava").get())
+if (project.hasProperty("release")) {
+    signing {
+        useGpgCmd()
+        sign(publishing.publications.named("mavenJava").get())
+    }
 }
 
